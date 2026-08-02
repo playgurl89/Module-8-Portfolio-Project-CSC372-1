@@ -23,10 +23,12 @@ public class Inventory {
     // Borrows a book using its unique ID
     public boolean borrowBook(int id) {
 
-        for (Book book : mainInventory) {
+        for (int i = 0; i < mainInventory.size(); i++) {
+
+            Book book = mainInventory.get(i);
 
             if (book.getId() == id) {
-                mainInventory.remove(book);
+                mainInventory.remove(i);
                 lendingInventory.add(book);
 
                 System.out.println("Book successfully borrowed.");
@@ -41,10 +43,12 @@ public class Inventory {
     // Returns a borrowed book using its unique ID
     public boolean returnBook(int id) {
 
-        for (Book book : lendingInventory) {
+        for (int i = 0; i < lendingInventory.size(); i++) {
+
+            Book book = lendingInventory.get(i);
 
             if (book.getId() == id) {
-                lendingInventory.remove(book);
+                lendingInventory.remove(i);
                 mainInventory.add(book);
 
                 System.out.println("Book successfully returned.");

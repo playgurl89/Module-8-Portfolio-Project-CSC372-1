@@ -56,6 +56,13 @@ public class Main {
 
         while (running) {
 
+            // Display current inventory counts
+            System.out.println("\nAvailable Books: "
+                    + library.getMainInventoryCount());
+
+            System.out.println("Borrowed Books: "
+                    + library.getLendingInventoryCount());
+
             displayMenu();
 
             try {
