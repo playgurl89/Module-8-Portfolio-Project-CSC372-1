@@ -2,50 +2,54 @@
 Basic Library System in Java
 # Module 8 Portfolio Project: Basic Library System in Java
 
-## About This Project
+# Library Management System
 
-For my final portfolio project in CSC372-1 Programming II, I created a basic library management system using Java. The goal of this project was to bring together many of the concepts I learned throughout the course and apply them to a practical program.
+A console-based library management system built in Java using object-oriented programming principles and `ArrayList` collections.
 
-The library system allows users to add books, borrow and return books, search for books by title, and view all books that are currently available. I also added inventory tracking so the program displays how many books are currently available and how many have been borrowed.
+## Overview
 
-## How It Works
+This project was developed as the final portfolio project for CSC372-1 Programming II. It brings together concepts from throughout the course to create a complete, interactive Java application.
 
-The project is divided into three Java classes:
+The system allows users to manage a small library collection by adding books, borrowing and returning books, searching by title, and viewing available inventory.
 
-* **Book.java** - Creates the individual book objects and stores information including the book ID, title, author, ISBN, and number of pages.
-* **Inventory.java** - Manages the available and borrowed books using `ArrayList` collections. It handles adding, borrowing, returning, and searching for books.
-* **Main.java** - Runs the program and provides the interactive menu that allows the user to choose different library functions.
+## Features
 
-I added several book titles and authors that were personally meaningful or fun to include in the project, including books about motherhood, cooking, outdoor activities, and computer science.
+- Add books to the library inventory
+- Borrow books and track lending status
+- Return borrowed books
+- Search for books by title
+- Display available books
+- Track available and borrowed inventory
+- Validate user input and handle invalid entries
+- Provide user-friendly feedback when requested books are unavailable
 
-## What I Learned
+## Project Structure
 
-This project gave me the opportunity to apply several concepts from the course in one program. I used object-oriented programming, classes, objects, constructors, encapsulation, getters and setters, `ArrayList` collections, loops, conditional statements, user input, and exception handling.
+| File | Purpose |
+|---|---|
+| `Book.java` | Defines the `Book` object and stores book information |
+| `Inventory.java` | Manages the library collection and lending operations |
+| `Main.java` | Provides the interactive menu and runs the application |
 
-I also practiced handling situations where a user might enter invalid information. For example, the program uses `try-catch` blocks to prevent invalid numerical input from causing the program to crash. The program also provides messages when a book cannot be found, when a user tries to borrow a book that is already borrowed, or when a book is returned that is not currently in the lending inventory.
+## Technologies & Concepts
 
-## Version Control
+- Java
+- Object-Oriented Programming
+- Classes and Objects
+- Encapsulation
+- Constructors
+- Getters and Setters
+- `ArrayList`
+- Loops and Conditional Logic
+- Exception Handling
+- User Input
+- Git & GitHub
 
-I used Git and GitHub throughout the development of this project to practice version control. I first committed an initial working version of the library system and then made improvements to the inventory management and book borrowing and returning processes. I also tested the program multiple times to make sure the different operations worked as expected.
+## How to Run
 
-Using Git allowed me to see the progression of the project and keep track of changes as I improved the program.
+Clone the repository and navigate into the project directory.
 
-## How to Run the Program
-
-To compile the program, run:
+Compile the Java files:
 
 ```bash
 javac Book.java Inventory.java Main.java
-```
-
-Then run the program with:
-
-```bash
-java Main
-```
-
-Once the program starts, the user can select an option from the menu to add, borrow, return, or search for books, print the available books, or exit the program.
-
-## Project Purpose
-
-This project was a way for me to bring together the programming concepts I learned throughout CSC372-1 and apply them to a complete Java application. It also gave me more experience with testing, debugging, improving code, and using GitHub to manage different versions of a project.
